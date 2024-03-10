@@ -1,0 +1,13 @@
+
+.param{
+    display: inline-block;
+    width: 120px;
+}
+.fromto{
+    display: inline-block;
+    width: 80px;
+}
+.prior{
+    display: inline-block;
+    width: 30px;
+}

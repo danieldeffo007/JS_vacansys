@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вакансии</title>
+    <link rel="stylesheet" href="vacancy.css">
+</head>
+<body>
+    <h1>Создание вакансий</h1>
+    <div class="form">
+        <form id="myForm">
+            <label for="nameVacancy">Название вакансии:</label>
+            <input type="text" id="nameVacancy" name="nameVacancy" required><br><br>
+
+            <label for="quantity">Количество мест:</label>
+            <input type="number" id="quantity" name="quantity" required><br><br>
+            <h4>Расставьте приоритет и ОДЗ.(Приоритет от 1 до 5, 1 - самый важный критерий)</h4>
+
+            <span class="param">Возраст:</span>
+            <label for="from0" >От:</label>
+            <input type="number" id="from0" name="from0" value="18" class="fromto" required>
+            <label for="to0">До:</label>
+            <input type="number" id="to0" name="to0" value="100" class="fromto" required>
+            <label for="prior0">   Приоритет:</label>
+            <input type="number" id="prior0" name="prior0" value="1" class="prior" required><br><br>
+
+            <span class="param">Квалификация:</span>
+            От:
+            <select name="from1" class="fromto">
+                <option value="1">Низкая</option>
+                <option value="2">Средняя</option>
+                <option value="3">Высокая</option>
+            </select>
+            От:
+            <select name="to1" class="fromto">
+                <option value="1">Низкая</option>
+                <option value="2">Средняя</option>
+                <option value="3" selected>Высокая</option>
+            </select>
+            <label for="prior1">   Приоритет:</label>
+            <input type="number" id="prior1" name="prior1" value="2" class="prior" required><br><br>
+
+            <span class="param">Опыт работы:</span>
+            <label for="from2" >От:</label>
+            <input type="number" id="from2" name="from2" value="0" class="fromto" required>
+            <label for="to2">До:</label>
+            <input type="number" id="to2" name="to2" value="100" class="fromto" required>
+            <label for="prior2">   Приоритет:</label>
+            <input type="number" id="prior2" name="prior2" value="3" class="prior"  required><br><br>
+
+            <span class="param">З/П:</span>
+            <label for="from3" >От:</label>
+            <input type="number" id="from3" name="from3" value="0" class="fromto" required>
+            <label for="to3">До:</label>
+            <input type="number" id="to3" name="to3" value="1000000" class="fromto" required>
+            <label for="prior2">   Приоритет:</label>
+            <input type="number" id="prior3" name="prior3" value="4" class="prior" required><br><br>
+
+            <span class="param">Образование:</span>
+            От:
+            <select name="from4" class="fromto">
+                <option value="1">Среднее</option>
+                <option value="2">Бакалавриат</option>
+                <option value="3">Специалитет</option>
+            </select>
+            От:
+            <select name="to4" class="fromto">
+                <option value="1">Среднее</option>
+                <option value="2">Бакалавриат</option>
+                <option value="3" selected>Специалитет</option>
+            </select>
+            <label for="prior4">   Приоритет:</label>
+            <input type="number" id="prior4" name="prior4" value="5" class="prior" required><br><br>
+
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+    <h2>Список вакансий</h2>
+    <div class="list">
+
+    </div>
+    <script src="vacancy.js"></script>
+</body>
+</html>

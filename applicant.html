@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="form">
+    <h1>Добавить претендента</h1>
+  <form id="myForm">
+      Вакансия:
+      <select name="idVacancy" class="idVacancy">
+      </select><br><br>
+
+    <label for="fio">ФИО:</label>
+    <input type="text" id="fio" name="fio" required><br><br>
+
+    <label for="age">Возраст:</label>
+    <input type="number" id="age" name="age" required><br>
+
+    <br>Квалификация:
+    <select name="kval">
+      <option value="1">Низкая</option>
+      <option value="2">Средняя</option>
+      <option value="3">Высокая</option>
+    </select>
+    <br><br>
+
+    <label for="workExperience">Опыт работы(лет):</label>
+    <input type="number" id="workExperience" name="workExperience" required><br><br>
+
+    <label for="salary">З/П(в рублях):</label>
+    <input type="number" id="salary" name="salary" required><br><br>
+
+    Образование:
+    <select name="education">
+      <option value="1">Среднее</option>
+      <option value="2">Бакалавр</option>
+      <option value="3">Специалитет</option>
+    </select>
+    <br><br>
+
+
+
+
+    <input type="submit" value="Отправить">
+  </form>
+</div>
+<h2>Список претендентов</h2>
+<div class="list">
+
+</div>
+
+
+<script src="applicant.js"></script>
+</body>
+</html>
